@@ -7,12 +7,20 @@ Repo: the main folder for your content
 Master: definitive branch, production
 Branch: time line of your files,a testbed, branch -> master
 Pull requests: merge commits with another branch, can delete branch after
+.gitignore: files inside this get ignored, accepts wildcards and directories
 
 Git sequence: untracked -> staged -> local -> remote
                         add       commits  push
 Creating a Repo
 1. create a folder
 2. $ git init - Initialized empty Git repository
+
+Merging
+1. create a new branch
+2. make changes
+3. commit changes
+4. checkout back to Master
+5. git merge branch
 
 Commands
 status: gets tracked/untracked files, branch name and other info
@@ -21,7 +29,7 @@ git log - p more details
 
 add: starts tracking files
 git add <filename>
-git add -a  add all untracked files
+git add -A  add all untracked files
 git add .  adds all untracked files in current directory
 
 commit: pushes changes to local repo
@@ -29,3 +37,11 @@ git commit -m allows you to write a message
 git commit --amend combines new changes with the previous commit, overwriting it,denoted with an *
 
 diff: shows a comparison between the current and last commit, uses pluses and minuses
+git diff
+git diff branch1 branch2
+
+checkout: switches to an alternate branch
+git checkout -b creates and switches to a new branch
+
+branch: view other branches
+git branch
