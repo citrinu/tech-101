@@ -1,8 +1,27 @@
-repo: the main folder for your content
+One Time Config
+$ git config --global user.name "Your Name"
+$ git config --global user.email your.email@example.com (public)
+cat ~/.gitconfig - hidden config file contains above info
 
-branch: timeline of your files,testbed, branch -> master
-master: definitive branch, prodution
+Repo: the main folder for your content
+Master: definitive branch, production
+Branch: time line of your files,a testbed, branch -> master
+Pull requests: merge commits with another branch, can delete branch after
 
-type branch name, hit create
+Git sequence: untracked -> staged -> local -> remote
+                        add       commits  push
+Creating a Repo
+1. create a folder
+2. $ git init - Initialized empty Git repository
 
-pull requests: merge commits with another branch, can delete branch after
+Commands
+status: gets tracked/untracked files, branch name and other info
+log: pulls a record of commits
+
+add: starts tracking files
+git add <filename>
+git add -a  add all untracked files
+git add .  adds all untracked files in current directory
+
+commit: pushes changes to local repo
+git commit -m allows you to write a message
