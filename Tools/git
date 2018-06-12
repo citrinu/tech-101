@@ -17,6 +17,7 @@ Creating a Repo
 Commands
 status: gets tracked/untracked files, branch name and other info
 log: pulls a record of commits
+git log - p more details
 
 add: starts tracking files
 git add <filename>
@@ -25,3 +26,6 @@ git add .  adds all untracked files in current directory
 
 commit: pushes changes to local repo
 git commit -m allows you to write a message
+git commit --amend combines new changes with the previous commit, overwriting it,denoted with an *
+
+diff: shows a comparison between the current and last commit, uses pluses and minuses
