@@ -1,0 +1,8 @@
+repo: the main folder for your content
+
+branch: timeline of your files,testbed, branch -> master
+master: definitive branch, prodution
+
+type branch name, hit create
+
+pull requests: merge commits with another branch, can delete branch after

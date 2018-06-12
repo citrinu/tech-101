@@ -1,0 +1,108 @@
+a **command** consists of a prompt, the command, options, arguments
+* prompt
+  * supplied by the terminal, user$
+
+# Shortcuts
+new tab: ctrl+shift+t
+cancel: control + c
+sol: ^A
+eod: ^E
+clear line: ^U
+paste: ^ + shift + V
+clear: clear or ^L
+exit: ^D
+~ : shortcut for home ~/whatever/
+.. : one up
+. : current directory
+
+# Commands
+
+combining commands:
+* ./configure ; make ; make install
+* ./configure && make && make install
+
+manual: pulls up help files/documentation on commands/programs
+* man <command>
+* q to quit
+
+ls: list all files and directories
+* ls
+* ls wildcard.<extension>
+* ls -a list hidden files
+* ls -l <filename>  outputs additional info
+* ls -rtl reverse time modified long
+* ls -h  human readable
+
+cd: change directory
+* cd <location>
+* cd - previous directory
+
+echo: prints to screen
+* echo "txt" >
+  * appends to a file
+
+cat: combine contents or view contents
+* cat <file>
+
+
+diff: compare two files
+* diff <file1> <file2>
+
+touch: change  mondify time or create empty file1
+* touch <filename>
+* touch echo.txt mv echo.txt bar.txt cp bar.txt baz.txt
+
+! bang: reruns the last commands
+* !echo would run last echo command
+
+# File Manipulation
+
+mkdir: makes a directory
+* mkdir <foldername>
+
+move: can be used to move or rename files
+* mv <filename> <newfilename>
+* mv <filename>  newfolder/folder
+* mv -i prompt before overwrite
+* mv -n won't overwrite
+* mv --strip-trailing-slashes [source] [dest]
+* mv -u only if newer
+* mv -b creates backup with~
+
+
+copy: creates a copy of a file
+* cp <filename> <newfilename>
+* cp -r recursive, copies all files
+
+Append to file
+* >> <txt>
+
+cat: combine contents or view contents
+* cat <file>
+
+# File Inspection
+head: shows first 10 lines
+* head <filename>
+
+tail: shows last 10 lines
+* tail <filename>
+* tailing the log file
+  * tail -f <file>
+
+less: opens a file for searching
+* /<searchterm>
+  * n(ext) N(previous)
+* ^f forward
+* ^b backward
+* G move to eof
+* 1G back to beginning
+
+grep: search for a string in a file
+* grep <term> <file>
+* -i removes case sensitivity
+* -r recursive
+grep -ri <term> <location>
+
+# Other
+
+cURl: transfers data from or to a server

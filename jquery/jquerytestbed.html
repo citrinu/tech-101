@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+  <meta charset="utf-8">
+  <title> Jquery Notes 1</title>
+</head>
+
+<body>
+
+
+<!--
+
+  $('id').function(arguments);
+
+$("element").function
+$(".class").function
+$("#id").functions
+selector element action
+
+can change css
+$("element").css("color", "colorType");
+
+can change properties
+$("element").prop("disabled", true);
+
+.html replaces all text in selected tag,accepts tags
+$("element").html("<h4>LMAO HAXXED xDDDD</h4>")
+.text() replaces text only
+$("element").text("LMAO HAXXED xDDDD")
+
+$("#target2").remove();
+
+moves from one div to another
+$("#target4").appendTo('#left-well');
+
+clones then moves
+$("#target1").clone('#left-well');
+
+change parent of selected element
+$("#right-well").parent().css("background-color", "green");
+child
+$("#left-well").children().css("background-color", "blue");
+
+selects nth nested element thats tagged with target
+$(".target:nth-child(x)")
+$(".target:odd")
+$(".target:even")
+$("body")
+
+-->
+
+
+
+<script> $(document).ready(function(){
+
+  $('#changed').html("<p> NEW TEXT BABY</p>");
+  $('#changed').css("color", "blue")
+
+
+  var hiddenMSG = $("#hiddenTXT");
+
+  $("button").on("click", function(event){
+    hiddenMSG.show();
+  })
+
+});
+</script>
+
+<p id="hiddenTXT" style="display: none;">YOOOOOOOO ITS YA BOI</p>
+
+
+<p id="changed">THIS TEXT WONT SHOW IF DONE CORRECTLY</p>
+
+<button type="button" class="btn btn-primary">Hello</button>
+
+
+</body>
+
+</html>
