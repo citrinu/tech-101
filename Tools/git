@@ -3,6 +3,8 @@ $ git config --global user.name "Your Name"
 $ git config --global user.email your.email@example.com (public)
 cat ~/.gitconfig - hidden config file contains above info
 
+curl -u 'USER' https://api.github.com/user/repos -d '{"name":"REPO"}'
+
 Repo: the main folder for your content
 Master: definitive branch, production
 Branch: time line of your files,a testbed, branch -> master
@@ -45,6 +47,7 @@ git checkout -b creates and switches to a new branch
 
 branch: view other branches
 git branch
+git branch -d branchName  deletes the branch
 
 merge: merges changes to another branch
 git merge branchName
