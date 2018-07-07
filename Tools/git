@@ -3,7 +3,9 @@ $ git config --global user.name "Your Name"
 $ git config --global user.email your.email@example.com (public)
 cat ~/.gitconfig - hidden config file contains above info
 
-curl -u 'USER' https://api.github.com/user/repos -d '{"name":"REPO"}'
+curl -u 'citrinu' https://api.github.com/user/repos -d '{"name":"REPO"}'
+git remote add origin git@github.com:nyeates/projectname.git
+git push -u origin master
 
 Repo: the main folder for your content
 Master: definitive branch, production
