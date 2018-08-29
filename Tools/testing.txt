@@ -1,0 +1,20 @@
+Testing is using code to write "Tests" that ensure
+your code is running correctly
+A test suite is a collection of tests
+This reduces bugs and speeds up coding time
+
+Why test?
+Tests protect against regression, when a feature suddenly stops working
+Tests allow better refactoring, changing code form but not function
+Tests act as a client allowing you to see design cohe
+
+When to test?
+required test code is short compared to app code
+when security is important
+when a bug is found,reproduce it,test, fix it
+test before refactor
+integration tests come second
+
+Test driven development:
+1. write failing tests
+2. write code to get the tests to pass
